@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: aliceblue;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  color: black;
+}
+.createBtn{
+  align-self: center;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  width: 80px;
+}
+/*nav*/
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #213547;
+  color: aliceblue;
+}
+
+nav .home {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+
+nav .register {
+  position: absolute;
+  right: 20%;
+  top: 30%;
+}
+
+nav .user {
+  position: absolute;
+  right: 10%;
+  top: 35%;
+}
+
+nav .logout {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+}
+nav .login{
+  position: absolute;
+  right: 35%;
+  top: 30%;
+}
+/**/
+.content {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .sheet {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 0.5fr 0.5fr;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  height: 20vh;
+  border: #213547 solid;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.content .sheet button {
+  width: 110px;
+  margin-right: 10px;
+}
+
+/*form*/
+.createForm {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+  top: 100px;
+  left: 30%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.createForm input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.createForm h3 {
+  align-self: center;
+  color: #213547;
+}
+.createForm .close{
+  position: absolute;
+  top: 10px;
+  border-radius: 50%;
+  width: 60px;
+}
